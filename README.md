@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full Stack Trello Clone with Next.js 14 App Router: React, Tailwind, Prisma, Server Actions , MySql , Clerk and ShadcnUI 2024
 
-## Getting Started
+![Screenshot 2024-04-11 204057](https://github.com/PSriVignesH/ecommerce-admin-dashboard/assets/111482290/a06a3a65-f5b5-4df8-a808-92ca5821837d)
 
-First, run the development server:
+This is a repository for a Full Stack Trello Clone with Next.js 14 App Router: React, Tailwind, Prisma, MySQL, Clerk and Server actions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+Features:
+   
+- Auth using clerk
+- Organizations / Workspaces
+- Board creation
+- Unsplash API for random beautiful cover images
+- Activity log for entire organization
+- Board rename and delete
+- List creation
+- List rename, delete, drag & drop reorder and copy
+- Card creation
+- Card description, rename, delete, drag & drop reorder and copy
+- Card activity log
+- Board limit for every organization
+- Stripe subscription for each organization to unlock unlimited boards
+- Landing page
+- MySQL DB with Aiven
+- Prisma ORM
+- shadcnUI & TailwindCSS
+
+### Prerequisites
+
+**Node version 14.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/PSriVignesH/trello-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup .env file
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+DATABASE_URL=
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+STRIPE_API_KEY=
+NEXT_PUBLIC_APP_URL=
+STRIPE_WEBHOOK_SECRET = 
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Setup Prisma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```shell
+npx prisma db push
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Start the app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+npm run dev
+```
+
+## Available commands
