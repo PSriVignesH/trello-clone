@@ -6,7 +6,7 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <div className='h-screen flex justify-center items-center'>
+    <div className='h-screen  w-screen flex justify-center items-center'>
       <PuffLoader size={100} color='#0369A1'/>
     </div>
   )
