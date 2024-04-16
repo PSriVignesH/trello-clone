@@ -5,8 +5,8 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <div className='h-[70vh] flex flex-col justify-center items-center'>
-      <HashLoader size={100} color='#0369A1'/>
+    <div className='h-full flex flex-col justify-center items-center'>
+      <HashLoader size={75} color='#0369A1'/>
     </div>
   )
 }
